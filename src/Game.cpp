@@ -8,7 +8,7 @@ Game::Game() {
     score = new Score();
 
     mundo = new Mundo(500, 500, 10, score);
-    p1 = new Player(place[0], place[1], 30.0, 30.0, score, mundo);
+    p1 = new Player(place[0], place[1], 12.5, 12.5, score, mundo);
 }
 
 void Game::tick() {

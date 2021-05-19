@@ -23,6 +23,7 @@ class Enemy {
     void Move();
     void tick();
     void draw();
+    void trocarSentido();
 
    protected:
    private:

@@ -47,20 +47,26 @@
 		<Unit filename="include/Bomba.h" />
 		<Unit filename="include/Enemy.h" />
 		<Unit filename="include/Game.h" />
+		<Unit filename="include/GameOver.h" />
 		<Unit filename="include/Mascara.h" />
 		<Unit filename="include/Mundo.h" />
 		<Unit filename="include/Parede.h" />
 		<Unit filename="include/Player.h" />
+		<Unit filename="include/Pos.h" />
 		<Unit filename="include/Score.h" />
+		<Unit filename="include/Vitoria.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Bomba.cpp" />
 		<Unit filename="src/Enemy.cpp" />
 		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/GameOver.cpp" />
 		<Unit filename="src/Mascara.cpp" />
 		<Unit filename="src/Mundo.cpp" />
 		<Unit filename="src/Parede.cpp" />
 		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Pos.cpp" />
 		<Unit filename="src/Score.cpp" />
+		<Unit filename="src/Vitoria.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

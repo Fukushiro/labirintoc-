@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1621297884 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\main.cpp
+1621399598 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\main.cpp
 	<windows.h>
 	<GL/glut.h>
 	<stdlib.h>
@@ -1479,13 +1479,13 @@
 1621201398 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\parede.cpp
 	"Parede.h"
 
-1621307067 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\mundo.cpp
+1621383353 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\mundo.cpp
 	"Mundo.h"
 	"Enemy.h"
 	<stdlib.h>
 	<time.h>
 
-1621347701 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\mundo.h
+1621399468 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\mundo.h
 	<list>
 	<vector>
 	<iostream>
@@ -1493,28 +1493,31 @@
 	"Score.h"
 	"Pos.h"
 
-1621220455 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\enemy.cpp
+1621399524 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\enemy.cpp
 	"Enemy.h"
 	"Mundo.h"
+	<stdlib.h>
+	<time.h>
 
-1621204595 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\enemy.h
+1621384876 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\enemy.h
 	<windows.h>
 	<GL/glut.h>
 	"Mascara.h"
 	"Mundo.h"
 
-1621220803 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\player.h
+1621380487 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\player.h
 	<windows.h>
 	<GL/glut.h>
+	<iostream>
 	"Bomba.h"
 	"Score.h"
 	"Mundo.h"
 	"Enemy.h"
 
-1621221258 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\player.cpp
+1621381169 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\player.cpp
 	"Player.h"
 
-1621298222 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\game.cpp
+1621380283 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\game.cpp
 	"Game.h"
 
 1621219783 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\game.h

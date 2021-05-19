@@ -1,5 +1,5 @@
 #include "Player.h"
-
+extern double deltaTime;
 void perder();
 enum Direcao {
     Right,
@@ -22,7 +22,7 @@ Player::Player(double x, double y, double w, double h, Score* score, Mundo* mund
     this->w = w;
     this->h = h;
     this->state = 0;
-    this->speed = 5;
+    this->speed = 100;
     this->horizontal = 0;
     this->horizontal = 0;
     this->m1.start(this->x, this->y, this->w, this->h);
@@ -63,15 +63,17 @@ int Player::col(int direction, double speed) {
 }
 
 void Player::Move() {
-    if (this->horizontal == 1 && !this->col(Direcao::Right, this->speed)) {
-        this->x += this->speed;
-    } else if (this->horizontal == 2 && !this->col(Direcao::Left, this->speed)) {
-        this->x -= this->speed;
+    double customSpeed = this->speed*(deltaTime / 1000);
+    //std::cout << this->speed * (deltaTime / 1000) << std::endl;
+    if (this->horizontal == 1 && !this->col(Direcao::Right, customSpeed)) {
+        this->x += customSpeed;
+    } else if (this->horizontal == 2 && !this->col(Direcao::Left, customSpeed)) {
+        this->x -= customSpeed;
     }
-    if (this->vertical == 1 && !this->col(Direcao::Top, this->speed)) {
-        this->y += this->speed;
-    } else if (this->vertical == 2 && !this->col(Direcao::Down, this->speed)) {
-        this->y -= this->speed;
+    if (this->vertical == 1 && !this->col(Direcao::Top, customSpeed)) {
+        this->y += customSpeed;
+    } else if (this->vertical == 2 && !this->col(Direcao::Down, customSpeed)) {
+        this->y -= customSpeed;
     }
     this->m1.atualizarPos(this->x, this->y);
 }

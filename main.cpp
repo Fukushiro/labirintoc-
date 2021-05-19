@@ -67,7 +67,7 @@ extern double place[2] = {10, 200};
 //time
 extern int tempoUsado = 0;
 extern int comeco = 0;
-extern int deltaTime = 0;
+extern double deltaTime = 0;
 int oldTime = 0;
 extern int newTime = 0;
 extern int pontuacao = 0;
@@ -100,7 +100,7 @@ void squad(int x, int y, int w, int h, double scaleX, double scaleY, const std::
 }
 
 //estados do jogo
-Game* game = new Game();
+extern Game* game = new Game();
 GameOver gameOver;
 Vitoria vitoria;
 

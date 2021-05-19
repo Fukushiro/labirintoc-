@@ -2,8 +2,8 @@
 #include "Enemy.h"
 #include <stdlib.h>
 #include <time.h>
-const int width = 10;
-const int height = 10;
+const int width = 20;
+const int height = 20;
 extern double place[2];
 void copiarMatriz(int matriz[height][width], int matrizCopiada[height][width]) {
     int x, y;
@@ -33,25 +33,25 @@ Mundo::Mundo(double w, double h, int numeroBombas, Score* score) {
     int x, y;
     this->w = w;
     this->h = h;
-    copiarMatriz(this->mundo, this->mundo3);
+    copiarMatriz(this->mundo, this->mundo2);
     this->score = score;
     this->numeroBombas = numeroBombas;
 
     double tileSizeX = 500 / width;
     double tileSizeY = 500 / height;
-    for (y = 0; y < 10; y++) {
-        for (x = 0; x < 10; x++) {
+    for (y = 0; y < height; y++) {
+        for (x = 0; x < width; x++) {
             if (mundo[y][x] == 1) {
-                this->lista.push_front(Parede(x * 50, 500 - (50 * y), 5, 5, true));
+                this->lista.push_front(Parede(x * tileSizeX, 500 - (tileSizeY * y), tileSizeX / 10, tileSizeY / 10, true));
             } else if (mundo[y][x] == 2) {
-                this->lista.push_front(Parede(x * 50, 500 - (50 * y), 5, 5, false));
+                this->lista.push_front(Parede(x * tileSizeX, 500 - (tileSizeY * y), 2.5, 2.5, false));
             } else if (mundo[y][x] == 3) {
                 //this->score->addBomba(x * tileSizeX + 14, 500 - (tileSizeY * y) - 14, tileSizeX / 2, tileSizeY / 2);
 
             } else if (mundo[y][x] == 4) {
-                this->inimigos.push_front(new Enemy(x * tileSizeX + 14, 500 - (tileSizeY * y) - 14, tileSizeX / 2, tileSizeY / 2, true, this));
+                this->inimigos.push_front(new Enemy(x * tileSizeX + (tileSizeX / 3), 500 - (tileSizeY * y) - (tileSizeY / 3), tileSizeX / 2, tileSizeY / 2, true, this));
             } else if (mundo[y][x] == 5) {
-                this->inimigos.push_front(new Enemy(x * tileSizeX + 14, 500 - (tileSizeY * y) - 14, tileSizeX / 2, tileSizeY / 2, false, this));
+                this->inimigos.push_front(new Enemy(x * tileSizeX + (tileSizeX / 3), 500 - (tileSizeY * y) - (tileSizeY / 3), tileSizeX / 2, tileSizeY / 2, false, this));
             } else if (mundo[y][x] == 6) {
                 place[0] = x * tileSizeX;
                 place[1] = 500 - (tileSizeY * y);

@@ -3,7 +3,7 @@
 #define PLAYER_H
 #include <windows.h>
 #include <GL/glut.h>
-
+#include <iostream>
 #include "Bomba.h"
 #include "Score.h"
 #include "Mundo.h"
