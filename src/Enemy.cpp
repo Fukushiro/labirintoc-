@@ -24,7 +24,7 @@ Enemy::Enemy(double x, double y, double w, double h, int horizontal, Mundo* mund
     this->y = y;
     this->w = w;
     this->h = h;
-    this->speed = 1;
+    this->speed = 2;
     this->col.start(this->x, this->y, this->w, this->h);
     this->horizontal = horizontal;
     this->mundo = mundo;
@@ -50,27 +50,30 @@ int Enemy::colCheck(int direction, double speed) {
 void Enemy::trocarSentido() {
     srand(time(NULL));
     if (horizontal) {
-        int valor = rand() % 101;
-        std::cout << valor << std::endl;
-        if (valor <= 100) {
-            horizontal = false;
-            int valor2 = rand() % 101;
-            if (game->p1->y > this->y) {
-                this->state = Direcao::Top;
-            } else {
+        horizontal = false;
+        if (game->p1->y > this->y) {
+            this->state = Direcao::Top;
+            if (this->colCheck(Direcao::Top, this->speed)) {
                 this->state = Direcao::Down;
             }
+        } else {
+            this->state = Direcao::Down;
+            if (this->colCheck(Direcao::Down, this->speed)) {
+                this->state = Direcao::Top;
+            }
         }
+
     } else {
-        int valor = rand() % 101;
-        std::cout << valor << std::endl;
-        if (valor <= 100) {
-            horizontal = true;
-            int valor2 = rand() % 101;
-            if (game->p1->x > this->x) {
-                this->state = Direcao::Right;
-            } else {
+        horizontal = true;
+        if (game->p1->x > this->x) {
+            this->state = Direcao::Right;
+            if (this->colCheck(Direcao::Right, this->speed)) {
                 this->state = Direcao::Left;
+            }
+        } else {
+            this->state = Direcao::Left;
+            if (this->colCheck(Direcao::Left, this->speed)) {
+                this->state = Direcao::Right;
             }
         }
     }

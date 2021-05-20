@@ -1493,11 +1493,12 @@
 	"Score.h"
 	"Pos.h"
 
-1621399524 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\enemy.cpp
+1621462937 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\enemy.cpp
 	"Enemy.h"
 	"Mundo.h"
 	<stdlib.h>
 	<time.h>
+	"Game.h"
 
 1621384876 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\enemy.h
 	<windows.h>
