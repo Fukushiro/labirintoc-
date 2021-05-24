@@ -70,6 +70,7 @@ class Mundo {
                           {1, 1, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1},
                           {1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
                           {1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}};
+    int numeroDeMundos = 2;
     Mundo();
     virtual ~Mundo();
     Mundo(double w, double h, int numeroBombas, Score* score);

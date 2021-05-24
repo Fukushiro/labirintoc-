@@ -80,7 +80,7 @@ void Enemy::trocarSentido() {
 }
 
 void Enemy::Move() {
-    std::cout << "Direcao:" << this->state << "Horizontal:" << this->horizontal << std::endl;
+    //std::cout << "Direcao:" << this->state << "Horizontal:" << this->horizontal << std::endl;
     if (horizontal) {
         if (state == Direcao::Right && !this->colCheck(Direcao::Right, this->speed)) {
             this->x += this->speed;

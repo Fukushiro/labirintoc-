@@ -20,19 +20,22 @@ Bomba::Bomba(double x, double y, double w, double h) {
     this->tempoAtual = 0;
     this->coolDown = 1;
     this->r = 255;
-    this->g = 0;
+    this->g = 102;
     this->b = 0;
 }
 
 void Bomba::mudarCor() {
-    if (this->r == 255) {
-        this->g = 255;
-        this->r = 0;
-    } else if (this->g == 255) {
-        this->b = 255;
-        this->g = 0;
-    } else if (this->b == 255) {
+    if (this->r == 255 && this->g == 102 && this->b == 0) {
+        this->g = 92;
+        this->r = 230;
+        this->b = 0;
+    } else if (this->r == 230 && this->g == 92 && this->b == 0) {
+         this->r = 179;
+        this->g = 71;
+        this->b = 0;
+    } else if (this->r == 179 && this->g == 71 && this->b == 0) {
         this->r = 255;
+        this->g = 102;
         this->b = 0;
     }
 }

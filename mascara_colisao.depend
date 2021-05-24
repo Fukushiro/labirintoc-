@@ -1452,7 +1452,7 @@
 1621195305 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\mascara.cpp
 	"Mascara.h"
 
-1621201057 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\bomba.cpp
+1621817399 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\bomba.cpp
 	"Bomba.h"
 	"Mascara.h"
 
@@ -1479,13 +1479,13 @@
 1621201398 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\parede.cpp
 	"Parede.h"
 
-1621383353 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\mundo.cpp
+1621817716 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\mundo.cpp
 	"Mundo.h"
 	"Enemy.h"
 	<stdlib.h>
 	<time.h>
 
-1621399468 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\mundo.h
+1621817705 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\mundo.h
 	<list>
 	<vector>
 	<iostream>
@@ -1493,7 +1493,7 @@
 	"Score.h"
 	"Pos.h"
 
-1621462937 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\enemy.cpp
+1621817553 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\enemy.cpp
 	"Enemy.h"
 	"Mundo.h"
 	<stdlib.h>
