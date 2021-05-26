@@ -1479,13 +1479,13 @@
 1621201398 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\parede.cpp
 	"Parede.h"
 
-1621817716 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\mundo.cpp
+1621905919 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\mundo.cpp
 	"Mundo.h"
 	"Enemy.h"
 	<stdlib.h>
 	<time.h>
 
-1621817705 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\mundo.h
+1621905893 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\mundo.h
 	<list>
 	<vector>
 	<iostream>
@@ -1493,7 +1493,7 @@
 	"Score.h"
 	"Pos.h"
 
-1621817553 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\enemy.cpp
+1621977943 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\enemy.cpp
 	"Enemy.h"
 	"Mundo.h"
 	<stdlib.h>
@@ -1506,7 +1506,7 @@
 	"Mascara.h"
 	"Mundo.h"
 
-1621380487 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\player.h
+1622048856 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\player.h
 	<windows.h>
 	<GL/glut.h>
 	<iostream>
@@ -1521,7 +1521,7 @@
 1621380283 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\src\game.cpp
 	"Game.h"
 
-1621219783 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\game.h
+1622049086 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\game.h
 	"Score.h"
 	"Mundo.h"
 	"Player.h"

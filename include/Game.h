@@ -14,7 +14,8 @@ class Game {
     void draw();
     void key(unsigned char key, int x, int y);
     void keyUp(unsigned char key, int x, int y);
-
+    void specialKeys(int key, int x, int y);
+    void specialKeysUp(int key, int x, int y);
    protected:
    private:
 };

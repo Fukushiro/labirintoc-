@@ -28,3 +28,10 @@ void Game::key(unsigned char key, int x, int y) {
 void Game::keyUp(unsigned char key, int x, int y) {
     this->p1->keyUp(key, x, y);
 }
+
+void Game::specialKeys(int key, int x, int y){
+    this->p1->specialKeys(key, x, y);
+}
+void Game::specialKeysUp(int key, int x, int y){
+    this->p1->specialKeysUp(key, x, y);
+}

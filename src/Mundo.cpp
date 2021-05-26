@@ -35,15 +35,20 @@ Mundo::Mundo(double w, double h, int numeroBombas, Score* score) {
     this->h = h;
     srand(time(NULL));
     int valMapa = rand() % this->numeroDeMundos;
-    switch(valMapa){
-    case 0:
-        break;
+    switch (valMapa) {
+        case 0:
+            copiarMatriz(this->mundo, this->mundo2);
+            break;
 
-    case 1:
-        copiarMatriz(this->mundo, this->mundo2);
-        break;
-    default:
-        break;
+        case 1:
+            copiarMatriz(this->mundo, this->mundo3);
+            break;
+        case 2:
+            copiarMatriz(this->mundo, this->mundo4);
+            break;
+        default:
+            copiarMatriz(this->mundo, this->mundo2);
+            break;
     }
 
     this->score = score;

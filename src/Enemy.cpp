@@ -4,6 +4,7 @@
 #include <time.h>
 #include "Game.h"
 extern Game* game;
+extern double deltaTime;
 void squad(int x, int y, int w, int h, double scaleX, double scaleY, const std::array<unsigned int, 3> valor);
 enum Direcao {
     Right,
@@ -24,7 +25,7 @@ Enemy::Enemy(double x, double y, double w, double h, int horizontal, Mundo* mund
     this->y = y;
     this->w = w;
     this->h = h;
-    this->speed = 2;
+    this->speed = 50;
     this->col.start(this->x, this->y, this->w, this->h);
     this->horizontal = horizontal;
     this->mundo = mundo;
@@ -80,10 +81,11 @@ void Enemy::trocarSentido() {
 }
 
 void Enemy::Move() {
+    double custom_speed = this->speed * (deltaTime / 1000);
     //std::cout << "Direcao:" << this->state << "Horizontal:" << this->horizontal << std::endl;
     if (horizontal) {
-        if (state == Direcao::Right && !this->colCheck(Direcao::Right, this->speed)) {
-            this->x += this->speed;
+        if (state == Direcao::Right && !this->colCheck(Direcao::Right, custom_speed)) {
+            this->x += custom_speed;
         } else if (state == Direcao::Right) {
             this->trocarSentido();
             if (state == Direcao::Right)
@@ -91,24 +93,24 @@ void Enemy::Move() {
                 this->state = Direcao::Left;
         }
 
-        if (state == Direcao::Left && !this->colCheck(Direcao::Left, this->speed)) {
-            this->x -= this->speed;
+        if (state == Direcao::Left && !this->colCheck(Direcao::Left, custom_speed)) {
+            this->x -= custom_speed;
         } else if (state == Direcao::Left) {
             this->trocarSentido();
             if (state == Direcao::Left)
                 this->state = Direcao::Right;
         }
     } else {
-        if (state == Direcao::Top && !this->colCheck(Direcao::Top, this->speed)) {
-            this->y += this->speed;
+        if (state == Direcao::Top && !this->colCheck(Direcao::Top, custom_speed)) {
+            this->y += custom_speed;
         } else if (state == Direcao::Top) {
             this->trocarSentido();
             if (state == Direcao::Top)
                 this->state = Direcao::Down;
         }
 
-        if (state == Direcao::Down && !this->colCheck(Direcao::Down, this->speed)) {
-            this->y -= this->speed;
+        if (state == Direcao::Down && !this->colCheck(Direcao::Down, custom_speed)) {
+            this->y -= custom_speed;
         } else if (state == Direcao::Down) {
             this->trocarSentido();
             if (state == Direcao::Down)

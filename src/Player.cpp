@@ -114,3 +114,30 @@ void Player::keyUp(unsigned char key, int x, int y) {
         this->vertical = 0;
     }
 }
+void Player::specialKeys(int key, int x, int y) {
+    if (key == GLUT_KEY_RIGHT) {
+        this->state = 1;
+        this->horizontal = 1;
+    } else if (key == GLUT_KEY_LEFT) {
+        this->state = 1;
+        this->horizontal = 2;
+    }
+
+    if (key == GLUT_KEY_UP) {
+        this->state = 1;
+        this->vertical = 1;
+    } else if (key == GLUT_KEY_DOWN) {
+        this->state = 1;
+        this->vertical = 2;
+    }
+}
+
+void Player::specialKeysUp(int key, int x, int y){
+    this->state = 0;
+    if (key == GLUT_KEY_LEFT || key == GLUT_KEY_RIGHT) {
+        this->horizontal = 0;
+    }
+    if (key == GLUT_KEY_UP || key == GLUT_KEY_DOWN) {
+        this->vertical = 0;
+    }
+}

@@ -188,7 +188,14 @@ void keyUp(unsigned char key, int x, int y) {
     // p1.keyUp(key, x, y);
     game->keyUp(key, x, y);
 }
+void specialKeys(int key, int x, int y) {
+game->specialKeys(key, x, y);
 
+}
+
+void specialKeysUp(int key, int x, int y){
+    game->specialKeysUp(key, x, y);
+}
 void mouse(int button, int mouseState, int x, int y) {
     // y = 500 - y;
 
@@ -231,6 +238,8 @@ int main(void) {
     glutDisplayFunc(desenha);
     glutKeyboardFunc(key);
     glutKeyboardUpFunc(keyUp);
+    glutSpecialFunc(specialKeys);
+    glutSpecialUpFunc(specialKeysUp);
     glutMouseFunc(mouse);
 
     init();
