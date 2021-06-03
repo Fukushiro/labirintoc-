@@ -1551,3 +1551,131 @@
 
 1621297950 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascara_colisao\include\pos.h
 
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<array>
+	<iostream>
+	<list>
+	<string>
+	"Mascara.h"
+	"Bomba.h"
+	"Score.h"
+	"Parede.h"
+	"Enemy.h"
+	"Mundo.h"
+	"Player.h"
+	"Game.h"
+	"GameOver.h"
+	"Vitoria.h"
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\mascara.h
+	<windows.h>
+	<GL/glut.h>
+	<array>
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\bomba.h
+	<windows.h>
+	<GL/glut.h>
+	<array>
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\score.h
+	<windows.h>
+	<GL/glut.h>
+	"Bomba.h"
+	<string.h>
+	<list>
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\parede.h
+	<windows.h>
+	<GL/glut.h>
+	"Mascara.h"
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\enemy.h
+	<windows.h>
+	<GL/glut.h>
+	"Mascara.h"
+	"Mundo.h"
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\mundo.h
+	<list>
+	<vector>
+	<iostream>
+	"Parede.h"
+	"Score.h"
+	"Pos.h"
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\pos.h
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\player.h
+	<windows.h>
+	<GL/glut.h>
+	<iostream>
+	"Bomba.h"
+	"Score.h"
+	"Mundo.h"
+	"Enemy.h"
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\game.h
+	"Score.h"
+	"Mundo.h"
+	"Player.h"
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\gameover.h
+	<windows.h>
+	<GL/glut.h>
+	"Mascara.h"
+	<array>
+	<iostream>
+
+1622738437 c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\include\vitoria.h
+	<windows.h>
+	<GL/glut.h>
+	"Mascara.h"
+	<array>
+	<iostream>
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\bomba.cpp
+	"Bomba.h"
+	"Mascara.h"
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\enemy.cpp
+	"Enemy.h"
+	"Mundo.h"
+	<stdlib.h>
+	<time.h>
+	"Game.h"
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\game.cpp
+	"Game.h"
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\gameover.cpp
+	"GameOver.h"
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\mascara.cpp
+	"Mascara.h"
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\mundo.cpp
+	"Mundo.h"
+	"Enemy.h"
+	<stdlib.h>
+	<time.h>
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\parede.cpp
+	"Parede.h"
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\player.cpp
+	"Player.h"
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\pos.cpp
+	"Pos.h"
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\score.cpp
+	"Score.h"
+
+1622738437 source:c:\users\jpflc\documents\desktop2\programacao\c\cpp\projetos\faculdade\testes\mascaras_colisao\mascar_colisao_git\src\vitoria.cpp
+	"Vitoria.h"
+
